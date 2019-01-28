@@ -7,6 +7,9 @@ public class AnimalFood {
     int foodQuantity;
     boolean foodAvailability;
 
+    public AnimalFood(String foodName) {
+        this.foodName = foodName;
+    }
 
 
 }

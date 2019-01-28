@@ -6,6 +6,12 @@ public class Animal {
     byte age;
     byte healthLevel;
     byte hungerLevel;
+
+    public Animal() {
+        this.name = name;
+        this.age = age;
+    }
+
     byte joynessLevel;
     String favoriteFood;
     String favoriteRecreationalActivity;

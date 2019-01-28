@@ -15,18 +15,22 @@ public class App {
         animal.favoriteFood = "Chappie";
         animal.favoriteRecreationalActivity = "Eating";
 
-        Adopter adopter = new Adopter();
+        Adopter adopter = new Adopter("Gigi",100); //dupa creare constructor adapter, are deja nume aici, mai punem sau le stergem cele de jos?
         adopter.name = "Gigi";
         adopter.budget = 1500;
+
+        Cat cat = new Cat("Blue");
+
+
 
         Veterinarian veterinarian = new Veterinarian();
         veterinarian.name = "Johnny";
         veterinarian.specialization = "Surgeon";
 
-        AnimalFood animalFood = new AnimalFood();
+        AnimalFood animalFood = new AnimalFood("beef");
         animalFood.foodAvailability = true;
 
-        RecreationalActivity recreationalActivity = new RecreationalActivity();
+        RecreationalActivity recreationalActivity = new RecreationalActivity("walking");
         recreationalActivity.activityName = "Walking";
 
 
