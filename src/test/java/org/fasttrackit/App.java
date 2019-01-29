@@ -8,7 +8,7 @@ public class App {
     public static void main( String [] args ) {
 
         Animal animal = new Animal();
-        animal.setName("Dog");
+        animal.setName("Bull");
         animal.setAge(3);
         animal.setHealthLevel(10);
         animal.setJoynessLevel(10);
