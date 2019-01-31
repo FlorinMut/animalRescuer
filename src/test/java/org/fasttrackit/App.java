@@ -3,7 +3,7 @@ package org.fasttrackit;
     import java.util.Date;
 
 
-public class App {
+public class App { // trebuie transferat catre APP in main si sters ce e aici//
 
     public static void main( String [] args ) {
 
