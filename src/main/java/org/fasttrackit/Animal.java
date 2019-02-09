@@ -10,6 +10,25 @@ public class Animal {
     private String favoriteFood;
     private String favoriteRecreationalActivity;
 
+   @Override
+    public String toString() { //am creat-o cu Alt Insert in parantezele metodei --> toString si am selectat toate optiunile. Nu e obligatorie ca sa mearga overridingul, trebuie doar sa avel sub clase si sa suprascriem metoda din clasa principala in acele sub clase
+        return "Animal{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", healthLevel=" + healthLevel +
+                ", hungerLevel=" + hungerLevel +
+                ", joynessLevel=" + joynessLevel +
+                ", favoriteFood='" + favoriteFood + '\'' +
+                ", favoriteRecreationalActivity='" + favoriteRecreationalActivity + '\'' +
+                '}';
+    }
+
+    public void determineFeelingOfTheAnimal(){
+
+        System.out.println("The animal is moving his eyes");
+
+    }
+
     public String getName() {
         return name;
     }

@@ -1,5 +1,6 @@
 package org.fasttrackit;
 
+
 public class Adopter {
 
     private String name;
@@ -16,6 +17,14 @@ public class Adopter {
        System.out.println("Gigi take " + animal.getName()+ " for a " + recreationalActivity.getActivityName()); //treb sa faci la fel pt a 2-a metoda//
 
    }
+
+   public void searchVeterinarian (Adopter adopter, Veterinarian firstVeterinarian, AnimalFood animalFood, Animal animal){
+
+       System.out.println(adopter.getName() + " goes to " + firstVeterinarian.getName() + " in order to ask him if " + animalFood.getFoodName() + " is the best food for " + animal.getName() + ".");
+
+   }
+
+
 
     public String getName() {
         return name;
