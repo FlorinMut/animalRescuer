@@ -43,8 +43,8 @@ public class App // sa am tot timpul grija sa am APP in main//
         Veterinarian firstVeterinarian = new Veterinarian();
         firstVeterinarian.setName("Tim");
 
-        Dog dog1 = new Dog();
-        Cat cat = new Cat();
+            Animal dog1 = new Dog();
+            Animal cat = new Cat();
 
 
         adopter.feedAnimal(animal,animalFood); //apelarea metodei 1. Insa fiindca metoda nu se afla in clasa curenta, va trebui sa creem si aici unul mai sus//
