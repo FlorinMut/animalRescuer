@@ -5,8 +5,8 @@ public class Animal {
     private String name;
     private int age;
     private int healthLevel;
-    private int hungerLevel;
-    private int joynessLevel;
+    public int hungerLevel = 10; // tema polimorfism: punem public ca sa putem folosi variabila hungerLevel in clasa Adapter
+    public int joynessLevel = 0;
     private String favoriteFood;
     private String favoriteRecreationalActivity;
 
