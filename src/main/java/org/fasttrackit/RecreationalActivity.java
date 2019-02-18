@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class RecreationalActivity {
 
-    private String activityName;
+    private String activityName = "walk";
 
     public String getActivityName() {
         return activityName;

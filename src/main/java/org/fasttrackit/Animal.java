@@ -7,8 +7,8 @@ public class Animal {
     private int healthLevel;
     public int hungerLevel = 10; // tema polimorfism: punem public ca sa putem folosi variabila hungerLevel in clasa Adapter
     public int joynessLevel = 0;
-    public String favoriteFood = "Max";
-    private String favoriteRecreationalActivity;
+    public String favoriteFood = "Taco Bell";
+    public String favoriteRecreationalActivity = "Walk";
 
    @Override
     public String toString() { //am creat-o cu Alt Insert in parantezele metodei --> toString si am selectat toate optiunile. Nu e obligatorie ca sa mearga overridingul, trebuie doar sa avel sub clase si sa suprascriem metoda din clasa principala in acele sub clase

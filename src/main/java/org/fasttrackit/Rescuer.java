@@ -9,29 +9,41 @@ public class Rescuer {
 
     public void feedAnimal (Animal animal, AnimalFood animalFood){ //declararea metodei 1 din tema//
 
-       System.out.println("Gigi just gave some "+ animalFood.getFoodName()+ " to "+ animal.getName()); //trebie sa creezi si un adaptor//
+       //System.out.println("Gigi just gave some "+ animalFood.getFoodName()+ " to "+ animal.getName()); //trebie sa creezi si un adaptor//
 
-       animal.hungerLevel--;
-       System.out.println(animal.hungerLevel);
-
-
-
+       //animal.hungerLevel--;
+       //System.out.println(animal.hungerLevel);
 
        //if(animal.getFavoriteFood()=animalFood.getFoodName()){
           //// animal.joynessLevel++;
           // System.out.println(animal.joynessLevel);
 
+        if (animalFood.getFoodName() == animal.favoriteFood) {
+            animal.joynessLevel = animal.joynessLevel+1;
+        }
+
+        int jl = animal.joynessLevel;
+
+        if (animal.joynessLevel == jl){
+            System.out.println(jl);}
+
     }
 
 
-   public void walkAnimal (Animal animal, RecreationalActivity recreationalActivity){      //declararea metodei 2 din tema//
+   public void entertainAnimal (Animal animal, RecreationalActivity recreationalActivity){      //declararea metodei 2 din tema//
 
-       System.out.println("Gigi take " + animal.getName()+ " for a " + recreationalActivity.getActivityName()); //treb sa faci la fel pt a 2-a metoda//
+       //System.out.println("Gigi take " + animal.getName()+ " for a " + recreationalActivity.getActivityName()); //treb sa faci la fel pt a 2-a metoda//
 
-       animal.joynessLevel++;
+       //animal.joynessLevel++;
+      // System.out.println(animal.joynessLevel);
+
+       if(recreationalActivity.getActivityName()== animal.favoriteRecreationalActivity){
+           animal.joynessLevel = animal.joynessLevel +2;
+           }else animal.joynessLevel = animal.joynessLevel++;
+
        System.out.println(animal.joynessLevel);
+       }
 
-   }
 
    public void searchVeterinarian (Rescuer rescuer, Veterinarian firstVeterinarian, AnimalFood animalFood, Animal animal){
 

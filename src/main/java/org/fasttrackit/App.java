@@ -34,7 +34,7 @@ public class App // sa am tot timpul grija sa am APP in main//
         Animal animal = new Animal();
         animal.setName("Bull");
 
-        AnimalFood animalFood = new AnimalFood("Chappie");
+        AnimalFood animalFood = new AnimalFood("Taco Bell");
 
         RecreationalActivity recreationalActivity = new RecreationalActivity("Walk");
 
@@ -53,17 +53,16 @@ public class App // sa am tot timpul grija sa am APP in main//
         rescuer.feedAnimal(animal,animalFood); //apelarea metodei 1. Insa fiindca metoda nu se afla in clasa curenta, va trebui sa creem si aici unul mai sus//
 
 
-
-        rescuer.walkAnimal(animal,recreationalActivity); //apelarea metodei 2//
+        rescuer.entertainAnimal(animal,recreationalActivity); //apelarea metodei 2//
 
         //rescuer.searchVeterinarian(rescuer,firstVeterinarian,animalFood,animal);
 
 
         //System.out.println(animal.toString());
 
-        animal.determineFeelingOfTheAnimal();
-        dog1.determineFeelingOfTheAnimal(); //cand apelam aceasta metoda se va apela prima data si metoda determine feeling din Animal, pt ca e suprascrisa (overriding) in sub-clasele clasei Animal
-        cat.determineFeelingOfTheAnimal(); //la fel
+        //animal.determineFeelingOfTheAnimal();
+        //dog1.determineFeelingOfTheAnimal(); //cand apelam aceasta metoda se va apela prima data si metoda determine feeling din Animal, pt ca e suprascrisa (overriding) in sub-clasele clasei Animal
+        //cat.determineFeelingOfTheAnimal(); //la fel
 
 
 
