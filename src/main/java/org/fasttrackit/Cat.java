@@ -4,8 +4,7 @@ public class Cat extends Animal {
 
     @Override
     public void determineFeelingOfTheAnimal() {
-        super.determineFeelingOfTheAnimal();
-        System.out.println("The cat is mewoing");
+        System.out.println(getName()+" is mewoing");
     }
 
     private String eyeColor;

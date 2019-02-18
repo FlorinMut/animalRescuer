@@ -13,6 +13,14 @@ public class Rescuer {
 
        animal.hungerLevel--;
        System.out.println(animal.hungerLevel);
+
+
+
+
+       //if(animal.getFavoriteFood()=animalFood.getFoodName()){
+          //// animal.joynessLevel++;
+          // System.out.println(animal.joynessLevel);
+
     }
 
 

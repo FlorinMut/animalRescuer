@@ -44,7 +44,10 @@ public class App // sa am tot timpul grija sa am APP in main//
         firstVeterinarian.setName("Tim");
 
             Animal dog1 = new Dog();
+            dog1.setName("Max"); //aici setam nume pt ei ca sa il ia getName cand apeleaza metoda mai jos
+
             Animal cat = new Cat();
+            cat.setName("Maxxie");  //aici setam nume pt ei ca sa il ia getName cand apeleaza metoda mai jos
 
 
         rescuer.feedAnimal(animal,animalFood); //apelarea metodei 1. Insa fiindca metoda nu se afla in clasa curenta, va trebui sa creem si aici unul mai sus//
@@ -58,8 +61,9 @@ public class App // sa am tot timpul grija sa am APP in main//
 
         //System.out.println(animal.toString());
 
-        //dog1.determineFeelingOfTheAnimal(); //cand apelam aceasta metoda se va apela prima data si metoda determine feeling din Animal, pt ca e suprascrisa (overriding) in sub-clasele clasei Animal
-        //cat.determineFeelingOfTheAnimal(); //la fel
+        animal.determineFeelingOfTheAnimal();
+        dog1.determineFeelingOfTheAnimal(); //cand apelam aceasta metoda se va apela prima data si metoda determine feeling din Animal, pt ca e suprascrisa (overriding) in sub-clasele clasei Animal
+        cat.determineFeelingOfTheAnimal(); //la fel
 
 
 

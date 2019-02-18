@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class AnimalFood {
 
-    private String foodName;
+    public String foodName = "Max";
     private int foodPrice;
 
     public String getFoodName() {

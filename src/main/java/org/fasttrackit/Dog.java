@@ -14,7 +14,6 @@ private String breed;
 
     @Override
     public void determineFeelingOfTheAnimal() {
-        super.determineFeelingOfTheAnimal();
-        System.out.println("The dog is happy");
+        System.out.println(getName()+" is happy");
     }
 }

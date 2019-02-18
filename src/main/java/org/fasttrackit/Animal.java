@@ -7,7 +7,7 @@ public class Animal {
     private int healthLevel;
     public int hungerLevel = 10; // tema polimorfism: punem public ca sa putem folosi variabila hungerLevel in clasa Adapter
     public int joynessLevel = 0;
-    private String favoriteFood;
+    public String favoriteFood = "Max";
     private String favoriteRecreationalActivity;
 
    @Override
@@ -24,8 +24,8 @@ public class Animal {
     }
 
     public void determineFeelingOfTheAnimal(){
-
-        System.out.println("The animal is moving his eyes");
+        System.out.println(getName()+" is moving his eyes");
+        //pot sa folosesc getName() fara animal in fata pt ca sunt in clasa animal deja si oricum nu am un animal creat
 
     }
 
