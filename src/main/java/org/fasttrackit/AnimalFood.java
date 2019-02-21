@@ -5,6 +5,10 @@ public class AnimalFood {
     public String foodName = "Taco Bell";
     private int foodPrice;
 
+    public AnimalFood() {
+
+    }
+
     public String getFoodName() {
         return foodName;
     }
