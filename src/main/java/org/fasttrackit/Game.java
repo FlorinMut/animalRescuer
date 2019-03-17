@@ -19,7 +19,7 @@ public class Game {
         displayAvailableActivities();
     }
 
-    private void initFood(int FoodCount){  // adaugarea in lista
+    private void initFood(int FoodCount){  // adaugarea in lista a felurilor de mancare
         for (int i=0; i < FoodCount; i++){
              AnimalFood animalFood = new AnimalFood();
              availableFood.add(animalFood);}
