@@ -5,6 +5,9 @@ public class App // sa am tot timpul grija sa am APP in main//
 {
     public static void main( String[] args ) {
 
+        Game game = new Game(); //cream un obiect Game ca sa ne faca legatura cu metodele din clasa Game
+        game.start(); // apelam metoda Game
+
         /* Animal animal = new Animal();
         animal.setName("Bull");
         animal.setAge(3);
@@ -50,10 +53,10 @@ public class App // sa am tot timpul grija sa am APP in main//
             cat.setName("Maxxie");  //aici setam nume pt ei ca sa il ia getName cand apeleaza metoda mai jos
 
 
-        rescuer.feedAnimal(animal,animalFood); //apelarea metodei 1. Insa fiindca metoda nu se afla in clasa curenta, va trebui sa creem si aici unul mai sus//
+        //rescuer.feedAnimal(animal,animalFood); //apelarea metodei 1. Insa fiindca metoda nu se afla in clasa curenta, va trebui sa creem si aici unul mai sus//
 
 
-        rescuer.entertainAnimal(animal,recreationalActivity); //apelarea metodei 2//
+        //rescuer.entertainAnimal(animal,recreationalActivity); //apelarea metodei 2//
 
         //rescuer.searchVeterinarian(rescuer,firstVeterinarian,animalFood,animal);
 
