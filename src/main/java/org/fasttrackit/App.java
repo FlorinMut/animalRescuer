@@ -3,7 +3,7 @@ package org.fasttrackit;
 
 public class App // sa am tot timpul grija sa am APP in main//
 {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
 
         Game game = new Game(); //cream un obiect Game ca sa ne faca legatura cu metodele din clasa Game
         game.start(); // apelam metoda Game

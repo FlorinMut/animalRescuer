@@ -2,7 +2,7 @@ package org.fasttrackit;
 
 public class Dog extends Animal {
 
-private String breed;
+public String breed;
 
     public String getBreed() {
         return breed;

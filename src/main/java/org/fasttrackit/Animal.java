@@ -2,9 +2,9 @@ package org.fasttrackit;
 
 public class Animal {
 
-    private String name;
-    private int age;
-    private int healthLevel;
+    public String name;
+    public int age;
+    public int healthLevel;
     public int hungerLevel = 10; // tema polimorfism: punem public ca sa putem folosi variabila hungerLevel in clasa Adapter
     public int joynessLevel = 0;
     public String favoriteFood = "Taco Bell";
