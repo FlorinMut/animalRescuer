@@ -25,7 +25,7 @@ public class Rescuer {
         int jl = animal.joynessLevel;
 
         if (animal.joynessLevel == jl){
-            System.out.println(jl);}
+            System.out.println("Happy or not 0/1 ?  \n"+jl);}
 
     }
 
