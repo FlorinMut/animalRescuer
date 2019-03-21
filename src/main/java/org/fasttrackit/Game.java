@@ -15,10 +15,10 @@ public class Game {
     private Activity[] activities = new Activity[10];
 
     public void start () throws Exception  {  //apelam metoda Start care va rula metodele de jos
-        initFood(3);
-        displayFood();
-        addActivities();
-        displayAvailableActivities();
+       initFood();
+       displayFood();
+        //addActivities();
+        //displayAvailableActivities();
         //initAnimal(1);
         //initRescuer();
         //requireFeeding();
@@ -65,9 +65,18 @@ public class Game {
     }
 
     private void requireFeeding() throws Exception {
-        System.out.println("Choose the food:");
-        Scanner scanner = new Scanner(System.in);
-        int z=0;
+        for (int i = 0; i <= availableFood.size(); i++){
+            System.out.println("Choose the food:");
+            Scanner scanner = new Scanner(System.in);
+            String x = scanner.nextLine();
+            //System.out.println(dog.getName());
+            System.out.println(availableFood.get(i).getFoodName());
+            //System.out.println(rescuer.getName());
+            rescuer.feedAnimal(dog,availableFood.get(i));
+            System.out.println("Animal is fed");
+
+        }
+            /*int z=0;
         while (z == 0) {
             try {
                 int x = scanner.nextInt();
@@ -89,7 +98,7 @@ public class Game {
                 throw new Exception ("Number out of range, keep trying");
             }
 
-        }
+        }*/
 
     }
 
@@ -104,7 +113,7 @@ public class Game {
 
     }*/
 
-    private void initFood(int FoodCount) throws Exception {  // adaugarea in lista a felurilor de mancare
+    private void initFood() throws Exception {  // adaugarea in lista a felurilor de mancare
        // for (int i=0; i < FoodCount; i++){
            AnimalFood animalFood1 = new AnimalFood(); //creare obiect 1 in lista
            AnimalFood animalFood2 = new AnimalFood(); //creare obiect 2 in lista
@@ -113,7 +122,7 @@ public class Game {
              availableFood.add(animalFood2); //adaugare obiect 2 in lista
              animalFood1.setFoodName("KFC"); //denumire obiect 1 din lista
              animalFood2.setFoodName("Chappie"); //denumire obiect 2 din lista
-        System.out.println("Number of food is ");
+        /*System.out.println("Number of food is ");
         Scanner scanner = new Scanner(System.in);
         try {
             int foodName = scanner.nextInt();
@@ -121,7 +130,7 @@ public class Game {
         } catch (InputMismatchException exception){
             throw new Exception("Integer required");
 
-        }
+        }*/
 
     }
 
@@ -137,7 +146,6 @@ public class Game {
         System.out.println("The available foods are: ");
         for (int i = 0; i < availableFood.size(); i++) {
             System.out.println(availableFood.get(i).getFoodName());}
-
     }
 
     private void displayAvailableActivities(){
