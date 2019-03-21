@@ -115,7 +115,7 @@ public class Game {
 
     private void initFood() throws Exception {  // adaugarea in lista a felurilor de mancare
        // for (int i=0; i < FoodCount; i++){
-           AnimalFood animalFood1 = new AnimalFood(); //creare obiect 1 in lista
+           AnimalFood animalFood1 = new AnimalFood(); //creare obiect 1 in listajljlj
            AnimalFood animalFood2 = new AnimalFood(); //creare obiect 2 in lista
             //animalFood.setFoodName(String.valueOf(i));
              availableFood.add(animalFood1); //adaugare obiect 1 in lista
